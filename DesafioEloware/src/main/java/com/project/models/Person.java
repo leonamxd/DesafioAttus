@@ -22,7 +22,7 @@ public class Person {
 	private Date birth;
 	
 	@OneToMany(mappedBy = "person", cascade = CascadeType.ALL)
-	private List<Adress> adresses;
+	private List<Address> addresses;
 	
 
 	public Person() {
@@ -47,11 +47,11 @@ public class Person {
 	public void setBirth(Date birth) {
 		this.birth = birth;
 	}
-	public List<Adress> getAdress() {
-		return adresses;
+	public List<Address> getAddresses() {
+		return addresses;
 	}
 
-	public void setAdresses(List<Adress> adresses) {
-		this.adresses = adresses;
+	public void setAddresses(List<Address> addresses) {
+		this.addresses = addresses;
 	}
 }
